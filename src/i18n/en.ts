@@ -2,9 +2,9 @@ export const en = {
   locale: 'en',
   langSwitch: { label: '中文', href: '/zh/' },
   meta: {
-    title: 'Maquan Technology — Full-Stack AI & Digital Intelligence Solutions',
+    title: 'Codvision Technology — Full-Stack AI & Digital Intelligence Solutions',
     description:
-      'Hangzhou Maquan Information Technology Co., Ltd. (Maquan Technology), founded in 2012 and headquartered in Hangzhou, is a leading full-stack digital intelligence solution provider focused on scenario-based AI Agent deployment for government and enterprise.',
+      'Hangzhou Codvision Information Technology Co., Ltd. (Codvision Technology), founded in 2012 and headquartered in Hangzhou, is a leading full-stack digital intelligence solution provider focused on scenario-based AI Agent deployment for government and enterprise.',
   },
   nav: {
     about: 'Overview',
@@ -19,7 +19,7 @@ export const en = {
     titleA: 'Machines that serve people ',
     titleB: 'more intelligently.',
     titleC: 'Data that builds a better society.',
-    lead: 'Maquan Technology is an AI company deeply rooted in the government and enterprise sector. Grounded in systems engineering and the theory of open complex giant systems, we specialize in big data, artificial intelligence, digital twins, and embodied intelligence — embedding a decade of domain expertise into AI Agents with native professional capability.',
+    lead: 'Codvision Technology is an AI company deeply rooted in the government and enterprise sector. Grounded in systems engineering and the theory of open complex giant systems, we specialize in big data, artificial intelligence, digital twins, and embodied intelligence — embedding a decade of domain expertise into AI Agents with native professional capability.',
     cta: 'Explore our work',
     stats: [
       { value: '2012', label: 'Founded in Hangzhou' },
@@ -33,12 +33,12 @@ export const en = {
     title: 'Overview',
     heading: 'A full-stack digital intelligence partner for government and enterprise.',
     body: [
-      'Founded in 2012 and headquartered in Hangzhou, Maquan Technology focuses on the scenario-based deployment and scaled application of AI Agents in the government and enterprise sector. We internalize more than a decade of professional experience and business methodology into intelligent agents, building products and solutions with native domain expertise.',
+      'Founded in 2012 and headquartered in Hangzhou, Codvision Technology focuses on the scenario-based deployment and scaled application of AI Agents in the government and enterprise sector. We internalize more than a decade of professional experience and business methodology into intelligent agents, building products and solutions with native domain expertise.',
       'From consulting and planning to product solutions, technical delivery, hardware and software operations, and long-term service, we provide full-lifecycle support for the digital transformation of government bodies and enterprises at every level.',
     ],
     orgTitle: 'Organization & Research',
     org: [
-      'Headquartered in Hangzhou, with the Hangzhou Maquan Digital Twin Technology Research Institute',
+      'Headquartered in Hangzhou, with the Hangzhou Codvision Digital Twin Technology Research Institute',
       'Subsidiaries in Zhengzhou, Chengdu, and Xiamen; a joint venture with Hangzhou Chengtou Group — Hangzhou Chengchuang Digital Intelligence Technology Co., Ltd.',
       'Offices in Beijing, Wuhan, Fuzhou, Haikou, and Hohhot, with a service network covering 28 provinces and reaching Southeast Asia',
       'Joint Smart City Laboratory with the Shanghai Tsinghua International Innovation Center',
@@ -189,7 +189,7 @@ export const en = {
       { value: '100+', label: 'Ecosystem partners' },
       { value: '400+', label: 'Delivered cooperation cases' },
     ],
-    body: 'Maquan Technology brings together government, industry, academia, and research — serving government agencies, system integrators, brand owners, universities, research institutes, and technology vendors. We are a founding council member of the Zhejiang City Brain Industry Alliance.',
+    body: 'Codvision Technology brings together government, industry, academia, and research — serving government agencies, system integrators, brand owners, universities, research institutes, and technology vendors. We are a founding council member of the Zhejiang City Brain Industry Alliance.',
     regionsTitle: 'Where we serve',
     regions: 'Zhejiang · Henan · Sichuan · Tibet · Hubei — and across China, reaching Southeast Asia.',
     clientsTitle: 'Selected clients',
@@ -217,7 +217,7 @@ export const en = {
     location: 'Headquarters — Hangzhou, China',
   },
   footer: {
-    legal: 'Hangzhou Maquan Information Technology Co., Ltd.',
+    legal: 'Hangzhou Codvision Information Technology Co., Ltd.',
     note: 'Making machines serve people more intelligently.',
   },
 };

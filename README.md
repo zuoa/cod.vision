@@ -1,6 +1,6 @@
-# cod.vision — Maquan Technology Corporate Site
+# cod.vision — Codvision Technology Corporate Site
 
-Bilingual (EN default, ZH) corporate website for 杭州码全信息科技有限公司 (Hangzhou Maquan Information Technology Co., Ltd.), built with [Astro](https://astro.build) as a fully static site.
+Bilingual (EN default, ZH) corporate website for 杭州码全信息科技有限公司 (Hangzhou Codvision Information Technology Co., Ltd.), built with [Astro](https://astro.build) as a fully static site.
 
 ## Structure
 
