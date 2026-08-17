@@ -1,0 +1,213 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Content } from '../i18n/en';
+
+interface Props {
+  t: Content;
+}
+
+const { t } = Astro.props;
+---
+
+<Base t={t}>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow reveal">{t.hero.eyebrow}</p>
+      <h1 class="hero-title reveal" style="--reveal-delay:.08s">
+        {t.hero.titleA}<span class="accent">{t.hero.titleB}</span><br />{t.hero.titleC}
+      </h1>
+      <p class="hero-lead reveal" style="--reveal-delay:.16s">{t.hero.lead}</p>
+      <a class="hero-cta reveal" style="--reveal-delay:.24s" href="#about">
+        {t.hero.cta}
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="hero-stats reveal" style="--reveal-delay:.32s">
+        {t.hero.stats.map((s) => (
+          <div class="hero-stat">
+            <div class="stat-value">{s.value}</div>
+            <div class="stat-label">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 Overview -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">{t.about.index}</span>
+        <span class="section-title">{t.about.title}</span>
+      </div>
+      <h2 class="section-heading reveal">{t.about.heading}</h2>
+      <div class="about-grid">
+        <div class="prose reveal">
+          {t.about.body.map((p) => <p>{p}</p>)}
+        </div>
+        <div class="org-card reveal" style="--reveal-delay:.1s">
+          <h3>{t.about.orgTitle}</h3>
+          <ul class="org-list">
+            {t.about.org.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Recognition -->
+  <section class="section" id="recognition">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">{t.recognition.index}</span>
+        <span class="section-title">{t.recognition.title}</span>
+      </div>
+      <h2 class="section-heading reveal">{t.recognition.heading}</h2>
+      <div class="honor-grid reveal">
+        {t.recognition.honors.map((h) => (
+          <div class="honor">
+            <h3>{h.name}</h3>
+            <p>{h.desc}</p>
+          </div>
+        ))}
+      </div>
+      <div class="ip-row reveal">
+        {t.recognition.ip.map((s) => (
+          <div class="hero-stat">
+            <div class="stat-value">{s.value}</div>
+            <div class="stat-label">{s.label}</div>
+          </div>
+        ))}
+      </div>
+      <p class="media-note reveal">{t.recognition.media}</p>
+    </div>
+  </section>
+
+  <!-- 03 Business -->
+  <section class="section" id="business">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">{t.business.index}</span>
+        <span class="section-title">{t.business.title}</span>
+      </div>
+      <h2 class="section-heading reveal">{t.business.heading}</h2>
+      <p class="section-lead reveal">{t.business.lead}</p>
+      <div>
+        {t.business.segments.map((seg, i) => (
+          <article class="segment reveal">
+            <div class="segment-meta">
+              <div class="segment-no">0{i + 1}</div>
+              <h3 class="segment-name">{seg.name}</h3>
+              <p class="segment-tagline">{seg.tagline}</p>
+            </div>
+            <div class="segment-body">
+              <p>{seg.body}</p>
+              <div class="solution-label">{t.locale === 'zh' ? '核心方案' : 'Key solutions'}</div>
+              <ul class="solution-list">
+                {seg.solutions.map((s) => <li>{s}</li>)}
+              </ul>
+              {seg.landmark && <div class="segment-landmark">{seg.landmark}</div>}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Technology -->
+  <section class="section" id="technology">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">{t.technology.index}</span>
+        <span class="section-title">{t.technology.title}</span>
+      </div>
+      <h2 class="section-heading reveal">{t.technology.heading}</h2>
+      <p class="section-lead reveal">{t.technology.lead}</p>
+      <div class="stack reveal">
+        {t.technology.layers.map((layer, i) => (
+          <div class="stack-row">
+            <span class="stack-no">L{i + 1}</span>
+            <span class="stack-name">{layer.name}</span>
+            <span class="stack-desc">{layer.desc}</span>
+          </div>
+        ))}
+      </div>
+      <div class="cap-grid reveal">
+        {t.technology.capabilities.map((cap) => (
+          <div class="cap">
+            <h3>{cap.name}</h3>
+            <p>{cap.desc}</p>
+          </div>
+        ))}
+      </div>
+      <h3 class="hw-title reveal">{t.technology.hardwareTitle}</h3>
+      <div class="hw-grid">
+        {t.technology.hardware.map((hw, i) => (
+          <div class="hw-card reveal" style={`--reveal-delay:${i * 0.1}s`}>
+            <span class="hw-kicker">{hw.subtitle}</span>
+            <h3>{hw.name}</h3>
+            <p>{hw.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Ecosystem -->
+  <section class="section" id="ecosystem">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">{t.ecosystem.index}</span>
+        <span class="section-title">{t.ecosystem.title}</span>
+      </div>
+      <h2 class="section-heading reveal">{t.ecosystem.heading}</h2>
+      <div class="eco-stats reveal">
+        {t.ecosystem.stats.map((s) => (
+          <div class="hero-stat">
+            <div class="stat-value">{s.value}</div>
+            <div class="stat-label">{s.label}</div>
+          </div>
+        ))}
+      </div>
+      <div class="eco-grid reveal">
+        <div class="eco-body">
+          <p>{t.ecosystem.body}</p>
+          <div class="eco-regions">
+            <h4>{t.ecosystem.regionsTitle}</h4>
+            <p>{t.ecosystem.regions}</p>
+          </div>
+        </div>
+        <div class="eco-clients">
+          <h4>{t.ecosystem.clientsTitle}</h4>
+          <ul class="client-list">
+            {t.ecosystem.clients.map((c) => <li>{c}</li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 Vision -->
+  <section class="section vision">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-index">{t.vision.index}</span>
+        <span class="section-title">{t.vision.title}</span>
+      </div>
+      <h2 class="vision-statement reveal">{t.vision.statement}</h2>
+      <p class="vision-body reveal">{t.vision.body}</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="reveal">{t.contact.title}</h2>
+      <p class="reveal">{t.contact.body}</p>
+      <a class="contact-mail reveal" href={`mailto:${t.contact.email}`}>{t.contact.email}</a>
+      <div class="contact-loc reveal">{t.contact.location}</div>
+    </div>
+  </section>
+</Base>
